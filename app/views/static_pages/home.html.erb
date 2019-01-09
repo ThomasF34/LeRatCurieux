@@ -1,11 +1,11 @@
       <!-- Masthead -->
-      <header class="masthead text-white text-center" style="background: image_url('bg.png') no-repeat center center;">
+      <header class="masthead text-white text-center" style="background: url('<%= image_path('bg.png') %>') no-repeat center center;">
         <div class="overlay"></div>
         <div class="container">
           <div class="row">
             <p id="notice"><%= notice %></p>
             <div class="col-xl-9 mx-auto">
-              <h1 class="mb-5">Faut trouver du texte parce que j'ai pas d'inspi :)</h1>
+              <h1 class="mb-5">Faut trouver du texte parce que j'ai pas d'inspi :) <%= image_path('bg.png') %></h1>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <%= render 'users/form', user: @user %>
