@@ -8,12 +8,56 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-light bg-light static-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"><%= image_tag "logo", class: "navbar-logo" %></a>
-          <a class="btn btn-primary" href="#">Sign In</a>
-        </div>
+      <div class="container">
+        <a class="navbar-brand" href="#"><%= image_tag "logo", class: "navbar-logo" %></a>
+        <a class="" href="#">On peut mettre ce qu'on veut ici</a>
+      </div>
     </nav>
     <%= yield %>
-  </body>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">Le Projet</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#team">Notre équipe</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; LeRatCurieux 2019. Tous droits réservés.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-twitter-square fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
 </html>

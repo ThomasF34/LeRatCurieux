@@ -1,0 +1,116 @@
+      <!-- Masthead -->
+      <header class="masthead text-white text-center" style="background: image_url('bg.png') no-repeat center center;">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <p id="notice"><%= notice %></p>
+            <div class="col-xl-9 mx-auto">
+              <h1 class="mb-5">Faut trouver du texte parce que j'ai pas d'inspi :)</h1>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <%= render 'users/form', user: @user %>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Icons Grid -->
+      <section class="features-icons bg-light text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                <div class="features-icons-icon d-flex">
+                  <i class="fa fa-balance-scale m-auto text-primary"></i>
+                </div>
+                <h3>Un</h3>
+                <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                <div class="features-icons-icon d-flex">
+                  <i class="fa fa-apple m-auto text-primary"></i>
+                </div>
+                <h3>Deux</h3>
+                <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                <div class="features-icons-icon d-flex">
+                  <i class="fa fa-check m-auto text-primary"></i>
+                </div>
+                <h3>Trois</h3>
+                <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Image Showcases -->
+      <section class="showcase">
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" id="firstImg"></div>
+            <div class="col-lg-6 p-5 order-lg-1 my-auto showcase-text">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p class="lead mb-0 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi. Donec fringilla semper urna in eleifend. Aliquam sed commodo est. Donec non eros a ante volutpat efficitur a non risus. Cras imperdiet sed nisi non convallis. Cras at nulla eu lacus mollis viverra sit amet vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vestibulum eros in turpis vestibulum, at condimentum tellus posuere. Etiam et ultrices elit. Duis scelerisque a orci sit amet elementum. Nam pharetra est nulla, at faucibus sapien cursus lacinia.</p>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-6 text-white showcase-img" id="secondImg"></div>
+            <div class="col-lg-6 p-5 my-auto showcase-text">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p class="lead text-justify mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi. Donec fringilla semper urna in eleifend. Aliquam sed commodo est. Donec non eros a ante volutpat efficitur a non risus. Cras imperdiet sed nisi non convallis. Cras at nulla eu lacus mollis viverra sit amet vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vestibulum eros in turpis vestibulum, at condimentum tellus posuere. Etiam et ultrices elit. Duis scelerisque a orci sit amet elementum. Nam pharetra est nulla, at faucibus sapien cursus lacinia.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section class="testimonials text-center bg-light" id="team">
+        <div class="container">
+          <h2 class="mb-5">Notre équipe</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <%= image_tag "loreline", class:"team-member img-fuild rounded-circle mb-3" %>
+                <h5>Loreline Gaston</h5>
+                <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <%= image_tag "laura", class:"team-member img-fuild rounded-circle mb-3" %>
+                <h5>Laura Gobert</h5>
+                <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <%= image_tag "thomas", class:"team-member img-fuild rounded-circle mb-3" %>
+                <h5>Thomas Falcone</h5>
+                <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="call-to-action text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 mx-auto">
+              <h2 class="mb-2">Newsletter</h2>
+              <h4 class="mb-4">Vous pouvez entrer vos coordonnées dans les cases ci-dessous pour recevoir notre newsletter</h4>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <%= render 'users/form', user: @user %>
+            </div>
+          </div>
+        </div>
+      </section>

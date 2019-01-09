@@ -13,6 +13,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'guard'
 gem 'bootstrap'
 gem 'jquery-rails'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
