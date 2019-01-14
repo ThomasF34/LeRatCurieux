@@ -3,11 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #firstImg{
-	background-image: url('first.png');
+	background-image: image-url('first.png');
 }
 
 #secondImg{
-	background-image: url('first.png');
+	background-image: image-url('first.png');
+}
+
+.bgPhoto{
+  	background: image-url("bg.png") no-repeat center center;
 }
 
 a:hover{
@@ -31,7 +35,6 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("bg.png") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -115,7 +118,6 @@ header.masthead h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("bg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
