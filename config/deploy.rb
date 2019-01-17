@@ -1,7 +1,7 @@
 # Change these
 server '185.216.27.87', roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'https://github.com/ThomasF34/LeRatCurieux2.0'
+set :repo_url,        'git@github.com:ThomasF34/LeRatCurieux2.0.git'
 set :application,     'le_rat_curieux'
 set :user,            'nelands'
 set :puma_threads,    [4, 16]
@@ -21,8 +21,8 @@ set :puma_error_log,  "#{release_path}/log/puma.access.log"
 set :ssh_options,     { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_rsa.pub) }
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
-set :puma_init_active_record, false  # Change to true if using ActiveRecord
-
+set :puma_init_active_record, true  # Change to true if using ActiveRecord
+set :linked_files, %w{config/master.key}
 ## Defaults:
 # set :scm,           :git
 # set :branch,        :master
