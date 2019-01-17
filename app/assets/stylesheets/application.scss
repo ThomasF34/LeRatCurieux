@@ -18,6 +18,30 @@
 @import "bootstrap";
 @import "font-awesome";
 
+@font-face {
+	font-family: "blinkstones";
+	src: url('/assets/blinkstones.ttf');
+}
+
+@font-face {
+	font-family: "another_flight";
+	src: url('/assets/another_flight.otf');
+}
+
+//body {
+//	font-family: "another_flight";
+//}
+
+.titrePolice{
+	font-family: "blinkstones";
+}
+
 .navbar-logo{
         max-height: 100px;
 }
+
+a:hover{
+	background-color: transparent;
+}
+
+

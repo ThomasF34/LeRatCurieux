@@ -1,14 +1,12 @@
       <!-- Masthead -->
-      <header class="masthead text-white text-center bgPhoto">
+      <header class="masthead text-white text-center bgPresentationPic">
         <div class="overlay"></div>
         <div class="container">
           <div class="row">
             <p id="notice"><%= notice %></p>
             <div class="col-xl-9 mx-auto">
-              <h1 class="mb-5">Faut trouver du texte parce que j'ai pas d'inspi :)</h1>
-            </div>
-            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <%= render 'users/form', user: @user %>
+              <h1 class="mb-5 titrePolice">Le Rat Curieux</h1>
+              <h2 class="mb-5 titrePolice">Librairie incubatrice de curiosite</h2>
             </div>
           </div>
         </div>
@@ -23,8 +21,12 @@
                 <div class="features-icons-icon d-flex">
                   <i class="fa fa-balance-scale m-auto text-primary"></i>
                 </div>
-                <h3>Un</h3>
-                <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi.</p>
+                <h3>Développer la curiosité</h3>
+                <ul class="noStyle">
+                  <li>Encourager à la lecture</li>	
+                  <li>Fédérer et débattre autour d’un même sujet</li>	
+                  <li>Encourager à la création artistique intellectuelle et ou manuelle</li>
+                </ul>
               </div>
             </div>
             <div class="col-lg-4">
@@ -32,8 +34,14 @@
                 <div class="features-icons-icon d-flex">
                   <i class="fa fa-apple m-auto text-primary"></i>
                 </div>
-                <h3>Deux</h3>
-                <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi.</p>
+                <h3>Pérenniser la curiosité</h3>
+                <p class="lead mb-0">
+                <ul class="noStyle">
+                  <li>Créer des liens entre les lecteurs</li>
+                  <li>Encourager à sortir des livres et à exporter les connaissances</li>
+                  <li>Permettre l’autonomie des lecteurs dans la recherche de nouveaux livres</li>
+                </ul>
+                </p>
               </div>
             </div>
             <div class="col-lg-4">
@@ -41,8 +49,13 @@
                 <div class="features-icons-icon d-flex">
                   <i class="fa fa-check m-auto text-primary"></i>
                 </div>
-                <h3>Trois</h3>
-                <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi.</p>
+                <h3>Réduire la fracture culturelle</h3>
+                <p class="lead mb-0">
+                <ul class="noStyle">
+                  <li>Remettre le plaisir au centre de la lecture chez les enfants</li>
+                    <li>Valoriser l’accès aux livres et à la culture dans tous les milieux</li>	
+                    <li>Favoriser une approche ludique et décomplexée du livre</li>
+                  </ul></p>
               </div>
             </div>
           </div>
@@ -55,15 +68,17 @@
           <div class="row no-gutters">
             <div class="col-lg-6 order-lg-2 text-white showcase-img" id="firstImg"></div>
             <div class="col-lg-6 p-5 order-lg-1 my-auto showcase-text">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p class="lead mb-0 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi. Donec fringilla semper urna in eleifend. Aliquam sed commodo est. Donec non eros a ante volutpat efficitur a non risus. Cras imperdiet sed nisi non convallis. Cras at nulla eu lacus mollis viverra sit amet vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vestibulum eros in turpis vestibulum, at condimentum tellus posuere. Etiam et ultrices elit. Duis scelerisque a orci sit amet elementum. Nam pharetra est nulla, at faucibus sapien cursus lacinia.</p>
+              <h2>Le saviez-vous ?</h2>
+              <p class="lead mb-4 text-justify">91% des français sont lecteurs. Malheureusement, <strong class="percent">52% d’entre eux ne peuvent pas bénéficier des conseils d’un libraire</strong>. La raison ? Ils n’ont pas la chance d’avoir une librairie près de chez eux.</p>
+              <p class="lead mb-4 text-justify"><strong class="percent">75% des parents français aimerait que leur enfant lise davantage pour le plaisir</strong>. Aujourd’hui la lecture est trop associée à l’école et représente bien souvent une contrainte pour le jeune public.</p>
             </div>
           </div>
           <div class="row no-gutters">
             <div class="col-lg-6 text-white showcase-img" id="secondImg"></div>
             <div class="col-lg-6 p-5 my-auto showcase-text">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p class="lead text-justify mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris et odio scelerisque, id porta nunc consequat. Suspendisse a varius nisi. Donec fringilla semper urna in eleifend. Aliquam sed commodo est. Donec non eros a ante volutpat efficitur a non risus. Cras imperdiet sed nisi non convallis. Cras at nulla eu lacus mollis viverra sit amet vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vestibulum eros in turpis vestibulum, at condimentum tellus posuere. Etiam et ultrices elit. Duis scelerisque a orci sit amet elementum. Nam pharetra est nulla, at faucibus sapien cursus lacinia.</p>
+              <h2>Le Rat Curieux</h2>
+              <p class="lead text-justify mb-4">Par son itinérance, le Rat Curieux apporte la lecture et les conseils littéraires chez le lecteur. Il ciblera les zones dépourvues de librairie et s’installera quelques heures, le temps nécessaire au lecteur de choisir l’objet de sa prochaine évasion. Notre venue permettra également d’animer la zone dans laquelle nous serons de passage. Le rat curieux lutte ainsi contre la fracture culturelle qui peut s’édifier entre les villes et les milieux ruraux.</p>
+              <p class="lead text-justify mb-4">Par son partenariat avec l’association « Les Amis du Rat Curieux », le Rat Curieux proposera des activités aux habitants des zones où il s’installe. Les activités s’articuleront en deux temps, une phase de découverte ludique et collaborative autours du livre choisi suivie d’une phase de création afin que le jeune public puisse repartir avec leur production. Notre impact est ainsi inscrit dans la durée.</p>
             </div>
           </div>
         </div>
@@ -78,35 +93,39 @@
               <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <%= image_tag "loreline.png", class:"team-member img-fuild rounded-circle mb-3" %>
                 <h5>Loreline Gaston</h5>
-                <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                <p class="font-weight-light mb-0">Créative, elle s’occupe de l’élaboration des activités pédagogiques et des visuels des réseaux sociaux. C’est elle qui est à l’initiative des idées les plus créatives de ce projet.</p>
+                <p class="font-weight-light mt-2">Une interrogation concernant les activités, ou un visuel ? C’est avec Loreline qu’il faudra voir.</p>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <%= image_tag "laura.png", class:"team-member img-fuild rounded-circle mb-3" %>
                 <h5>Laura Gobert</h5>
-                <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                <p class="font-weight-light mb-0">Gestionnaire de l’équipe, elle s’occupe de contacte les futurs partenaires et s’occuper de la communication. C’est aussi elle qui s’occupe de toutes les données chiffrées du projet.</p>
+                <p class="font-weight-light mt-2">Intéressé pour une collaboration ? C’est Laura qu’il faut contacter.</p>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <%= image_tag "thomas.png", class:"team-member img-fuild rounded-circle mb-3" %>
                 <h5>Thomas Falcone</h5>
-                <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                <p class="font-weight-light mb-0">Ce que vous êtes en train de lire c’est grâce à lui. Il est le Monsieur Web de notre projet. C’est grâce à son travail que nous allons pouvoir toucher une plus grande partie de la population.</p> 
+                <p class="font-weight-light mt-2">Une demande concernant notre site web et ses fonctionnalités ? C’est vers Thomas qu’il faudra se tourner.</p>
               </div>
             </div>
           </div>
+          <h4 class="mt-5">Ce qui nous lie ? L’envie d’agir socialement sur la société dans laquelle nous devons évoluer, notre passion pour la lecture et notre détermination à rendre le monde meilleur.</h4>
         </div>
       </section>
 
-      <!-- Call to Action -->
-      <section class="call-to-action text-white text-center bgPhoto">
+      <!-- Newsletter -->
+      <section class="call-to-action text-white text-center bgExchangePic">
         <div class="overlay"></div>
         <div class="container">
           <div class="row">
             <div class="col-xl-9 mx-auto">
               <h2 class="mb-2">Newsletter</h2>
-              <h4 class="mb-4">Vous pouvez entrer vos coordonnées dans les cases ci-dessous pour recevoir notre newsletter</h4>
+              <h4 class="mb-4">Pour être les premiers au courant des avancées du Rat Curieux et de l’organisation des activités.</h4>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <%= render 'users/form', user: @user %>
