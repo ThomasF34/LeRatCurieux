@@ -20,12 +20,12 @@
 
 @font-face {
 	font-family: "blinkstones";
-	src: url('/assets/blinkstones.ttf');
+	src: font-url('/assets/blinkstones.ttf');
 }
 
 @font-face {
 	font-family: "another_flight";
-	src: url('/assets/another_flight.otf');
+	src: font-url('/assets/another_flight.otf');
 }
 
 //body {
