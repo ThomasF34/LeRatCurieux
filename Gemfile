@@ -25,6 +25,11 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+  gem 'capistrano'         
+  gem 'capistrano-rvm'     
+  gem 'capistrano-rails'   
+  gem 'capistrano-bundler' 
+  gem 'capistrano3-puma'   
 end
 
 group :production do
