@@ -14,9 +14,9 @@ gem 'guard'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem "font-awesome-rails"
+gem 'pg', '0.20.0'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
 end
 
@@ -30,10 +30,6 @@ group :development do
   gem 'capistrano-rails'   
   gem 'capistrano-bundler' 
   gem 'capistrano3-puma'   
-end
-
-group :production do
-  gem 'pg', '0.20.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
