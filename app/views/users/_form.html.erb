@@ -1,11 +1,11 @@
 <%= form_with(model: user, local: true, class: "form-horizontal") do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <h2><%= pluralize(user.errors.count, "erreur") %> lors de l'inscription à la newsletter:</h2>
 
-      <ul>
+      <ul class="list-group">
       <% user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <li class="list-group-item" style="background-color: transparent;"><%= message %></li>
       <% end %>
       </ul>
     </div>
@@ -32,6 +32,19 @@
         </div>
       </div>
 
+      <div class="form-row field">
+        <div class="col-2">
+          <%= form.check_box :consentEvolve,  class: "form-control", id:"consentEvolveInput" %>
+        </div>
+        <%= form.label "J'accepte de recevoir les informations relatives à l'avancement du projet", class: "col-10 my-auto control-label", for: "consentEvolveInput" %>
+      </div>
+
+      <div class="form-row field">
+        <div class="col-2">
+          <%= form.check_box :consentActivity,  class: "form-control", id:"consentActivityInput" %>
+        </div>
+        <%= form.label "J'accepte de recevoir le calendrier et les nouvelles relatives aux activités", class: "col-10 my-auto control-label", for: "consentActivityInput" %>
+      </div>
   <div class="actions">
     <%= form.submit "S'inscrire", class: "btn btn-block btn-lg btn-primary" %>
   </div>

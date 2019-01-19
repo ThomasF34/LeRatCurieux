@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'static_pages/home', :as => 'home'
   get 'static_pages/contact', :as => 'contact'
   get 'static_pages/privacy', :as => 'privacy'
-  resources :users, only: [ :new, :create ]
+  resources :users, only: [ :create ]
 
   get '/home', to: 'static_pages#home'
   get '/contact', to: 'static_pages#contact'

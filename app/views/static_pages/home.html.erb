@@ -1,9 +1,14 @@
-      <!-- Masthead -->
+      <!-- Masthead -->  
+      <% flash.each do |key, value| %>
+        <div class="m-auto <%= flash_class(key) %>">
+          <%= value %>
+        </div>
+      <% end %>
+
       <header class="masthead text-white text-center bgPresentationPic">
         <div class="overlay"></div>
         <div class="container">
-          <div class="row">
-            <p id="notice"><%= notice %></p>
+          <div class="row"> 
             <div class="col-xl-9 mx-auto">
               <h1 class="mb-5 titrePolice">Le Rat Curieux</h1>
               <h2 class="mb-5 titrePolice">Librairie incubatrice de curiosite</h2>

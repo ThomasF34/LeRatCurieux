@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @user = User.new 
+    if (@user == nil) then @user = User.new end
   end
 
   def contact

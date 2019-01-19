@@ -31,7 +31,7 @@ class UsersController < ApplicationController
         format.html { redirect_to root_url, notice: "Vous êtes bien inscrit. Merci pour l'intérêt que vous portez à notre projet !" }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { render :new }
+        format.html { render "static_pages/home"}
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -45,7 +45,7 @@ class UsersController < ApplicationController
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
       else
-        format.html { render :edit }
+        format.html { render :edit, errors: @user.errors }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -69,6 +69,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :lname, :email)
+      params.require(:user).permit(:name, :lname, :email, :consentEvolve, :consentActivity)
     end
 end

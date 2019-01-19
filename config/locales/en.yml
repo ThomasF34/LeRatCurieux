@@ -30,4 +30,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        email: "L'adresse mail"
+        name: "Le nom"
+        lname: "Le prénom"
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "est requise"
+              taken: "existe déjà dans notre base de donnée"
+            name: 
+              blank: "est requis"
+            lname:
+              blank: "est requis"
+
