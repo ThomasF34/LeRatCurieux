@@ -1,6 +1,36 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.privacyText{
+	background: #757F9A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        margin: 0;
+	padding: 5rem;
+	padding-right: 2rem !important;
+	padding-left: 2rem !important;
+	text-align: justify;
+}
+
+.fullImg{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+}
+
+
+.contactInfo{
+        background: #56CCF2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+        margin: 0;
+	padding: 3rem;
+}
+
+.contactInfo a {
+	color: white !important;
+}
+
 .noStyle{
 	list-style: none;
 	padding: 0;
@@ -8,6 +38,10 @@
 
 #firstImg{
 	background-image: image-url('livreDroit.jpg');
+}
+
+#privacyImg{
+	background-image: image-url('privacy.jpg');
 }
 
 #secondImg{
@@ -113,8 +147,8 @@ header.masthead h1 {
 }
 
 .testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .testimonials .testimonial-item {
