@@ -1,4 +1,4 @@
-<%= form_with(model: user, local: true, class: "form-horizontal") do |form| %>
+<%= form_with(model: user, local: true, class: "form-horizontal", :url => "users#newsletter") do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(user.errors.count, "erreur") %> lors de l'inscription à la newsletter:</h2>

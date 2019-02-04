@@ -31,7 +31,7 @@ class UsersController < ApplicationController
         format.html { redirect_to root_url, notice: "Vous êtes bien inscrit. Merci pour l'intérêt que vous portez à notre projet !" }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { render "static_pages/home"}
+        format.html { render "static_pages/home", :anchor => "newsletter"}
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

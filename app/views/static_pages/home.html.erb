@@ -1,10 +1,4 @@
       <!-- Masthead -->  
-      <% flash.each do |key, value| %>
-        <div class="m-auto <%= flash_class(key) %>">
-          <%= value %>
-        </div>
-      <% end %>
-
       <header class="masthead text-white text-center bgPresentationPic">
         <div class="overlay"></div>
         <div class="container">
@@ -91,10 +85,15 @@
       </section>
       
       
-      <%= render "team" %> 
-      
+      <%= render "static_pages/team" %> 
+
+      <% flash.each do |key, value| %>
+        <div class="m-auto <%= flash_class(key) %>">
+          <%= value %>
+        </div>
+      <% end %>
       <!-- Newsletter -->
-      <section class="call-to-action text-white text-center bgExchangePic">
+      <section id="newsletter" class="call-to-action text-white text-center bgExchangePic">
         <div class="overlay"></div>
         <div class="container">
           <div class="row">
@@ -103,7 +102,7 @@
               <h4 class="mb-4">Pour être les premiers au courant des avancées du Rat Curieux et de l’organisation des activités.</h4>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <%= render 'users/form', user: @user %>
+              <%= render 'users/form', user: @user %>
             </div>
           </div>
         </div>
