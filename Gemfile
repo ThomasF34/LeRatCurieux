@@ -15,6 +15,7 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem "font-awesome-rails"
 gem 'pg', '0.20.0'
+gem 'owlcarousel-rails'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
@@ -30,6 +31,7 @@ group :development do
   gem 'capistrano-rails'   
   gem 'capistrano-bundler' 
   gem 'capistrano3-puma'   
+  gem 'brakeman' 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
