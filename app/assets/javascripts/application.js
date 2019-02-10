@@ -20,10 +20,11 @@
 
 $(window).on('load', function(){
 	$('.owl-carousel').owlCarousel({
-		margin:10,
+		margin:30,
 		loop:true,
+		autoHeight:true,
 		autoplay:true,
-		autoplayTimeout:2000,
+		autoplayTimeout:3000,
 		autoplayHoverPause:true,
 		responsiveClass:true,
 		responsive:{
