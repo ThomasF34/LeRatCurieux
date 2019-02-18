@@ -22,7 +22,7 @@ set :ssh_options,     { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to true if using ActiveRecord
-set :linked_files, %w{config/master.key config/database.yml}
+set :linked_files, %w{config/master.key config/database.yml public/google6245172312ba1fe0.html}
 ## Defaults:
 # set :scm,           :git
 # set :branch,        :master
