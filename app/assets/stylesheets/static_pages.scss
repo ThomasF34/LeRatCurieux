@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#partner{
+        margin-bottom: 15px;
+}
+
 .privacyText{
 	background: #757F9A;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
@@ -49,6 +53,9 @@
 	background-image: image-url('livreGauche.jpg');
 }
 
+#lastLine{
+	box-shadow: 0 10px 10px #eee;
+}
 .bgExchangePic{
   	background: image-url("exchange.jpg") no-repeat center center;
 }
@@ -61,7 +68,7 @@
   //font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 //}
 
-.percent{
+.bold{
         font-weight: bold;
 }
 
@@ -153,6 +160,8 @@ header.masthead h1 {
 .testimonials {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  box-shadow: 0 -10px 10px #eee;
+
 }
 
 .testimonials .testimonial-item {
