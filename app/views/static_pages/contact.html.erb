@@ -1,26 +1,26 @@
 <% provide(:title, "Contact") %> 
 <div class="container contactInfo col-12">
-<!-- Team -->
-<h2 class="text-center">Vous pouvez nous contacter en cliquant sur l'une des icônes ci-dessous</h2>
-        <div class="mt-5 text-center">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/leratcurieux/">
-                <i class="fa fa-facebook fa-5x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="mailto:leratcurieux@gmail.com">
-                <i class="fa fa-envelope fa-5x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="tel:0659733953">
-                <i class="fa fa-phone fa-5x fa-fw"></i>
-              </a>
-            </li> 
-          </ul>
-        </div>
+  <!-- Team -->
+  <h2 class="text-center">Contactez nous en cliquant sur le rat-ccourci de votre choix !</h2>
+  <div class="mt-5 text-center">
+    <ul class="list-inline mb-0">
+      <li class="list-inline-item mr-5">
+        <a id="icon_facebook" href="https://www.facebook.com/leratcurieux/">
+          <%= image_tag "icon_facebook.png", alt: "Le Rat Curieux sur Facebook"  %>
+        </a>
+      </li>
+      <li class="list-inline-item mr-5">
+        <a id="icon_mail" href="mailto:leratcurieux@gmail.com">
+          <%= image_tag "icon_mail.png", alt: "Le Rat Curieux sur Gmail"  %>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a id="icon_phone" href="tel:0659733953">
+          <%= image_tag "icon_phone.png", alt: "Le Rat Curieux par téléphone"  %>
+        </a>
+      </li> 
+    </ul>
+  </div>
 </div>
 
 <%= render "static_pages/team" %> 
