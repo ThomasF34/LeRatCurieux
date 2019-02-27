@@ -1,3 +1,5 @@
+<%= stylesheet_link_tag "charts" %>
+
 <!-- Masthead -->  
 <header class="masthead text-white text-center bgPresentationPic">
   <div class="overlay"></div>
@@ -67,10 +69,25 @@
   <div class="container-fluid p-0">
     <div class="row no-gutters">
       <div class="col-lg-6 order-lg-2 text-white showcase-img" id="firstImg"></div>
-      <div class="col-lg-6 p-5 order-lg-1 my-auto showcase-text">
-        <h2>Le saviez-vous ?</h2>
-        <p class="lead mb-4 text-justify">91% des français sont lecteurs. Malheureusement, <strong class="bold">52% d’entre eux ne peuvent pas bénéficier des conseils d’un libraire</strong>. La raison ? Ils n’ont pas la chance d’avoir une librairie près de chez eux.</p>
-        <p class="lead mb-4 text-justify"><strong class="bold">75% des parents français aimerait que leur enfant lise davantage pour le plaisir</strong>. Aujourd’hui la lecture est trop associée à l’école et représente bien souvent une contrainte pour le jeune public.</p>
+      <div class="col-lg-6 p-5 order-lg-1 my-auto showcase-text containerCharts">
+        <h2 class="mb-5">Le saviez-vous ?</h2>
+
+        <figure class="chart" data-percent="75">
+          <figcaption class="text blueStroke">75 %</figcaption>
+          <svg width="200" height="200">
+            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+          </svg>
+        </figure>
+        <p class="following"> des français aimeraient que leurs enfants lisent davantage pour le plaisir</p>
+        
+        <figure class="chart" data-percent="52">
+          <figcaption class="text orangeStroke">52 %</figcaption>
+          <svg width="200" height="200">
+            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+          </svg>
+        </figure>
+        <p class="following">des lecteurs français s'attristent de ne pas pouvoir bénéficier des conseils d’un libraire</p>
+
       </div>
     </div>
     <div class="row no-gutters" id="lastLine">
