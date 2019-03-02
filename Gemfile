@@ -11,7 +11,7 @@ gem 'jbuilder',     '2.7.0'
 gem 'minitest-reporters'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'guard'
-gem 'bootstrap'
+gem "bootstrap", ">= 4.3.1"
 gem 'jquery-rails'
 gem "font-awesome-rails"
 gem 'pg', '0.20.0'
