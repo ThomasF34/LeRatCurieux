@@ -20,6 +20,11 @@
 @import "bootstrap";
 @import "font-awesome";
 
+body{
+
+	font-family: "Lato", "Trebuchet";
+}
+
 @font-face {
 	font-family: "blinkstones";
 	src: font-url('blinkstones.ttf');
@@ -30,12 +35,22 @@
 	src: font-url('another_flight.otf');
 }
 
-body {
+.another-flight, h2, h3{
 	font-family: "another_flight", "Lato";
 }
 
-.titrePolice{
+.blinkstones {
 	font-family: "blinkstones", "Lato";
+	//blinkstone isn't great with bold weight
+	font-weight: normal !important;
+}
+
+h2, h3{
+	font-weight: bold; 
+}
+
+h2{
+	font-size: xx-large;
 }
 
 .navbar-logo{
