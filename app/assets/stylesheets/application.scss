@@ -22,17 +22,17 @@
 
 @font-face {
 	font-family: "blinkstones";
-	src: font-url('/assets/blinkstones.ttf');
+	src: font-url('blinkstones.ttf');
 }
 
 @font-face {
 	font-family: "another_flight";
-	src: font-url('/assets/another_flight.otf');
+	src: font-url('another_flight.otf');
 }
 
-//body {
-//	font-family: "another_flight";
-//}
+body {
+	font-family: "another_flight", "Lato";
+}
 
 .titrePolice{
 	font-family: "blinkstones", "Lato";
