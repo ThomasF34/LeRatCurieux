@@ -128,8 +128,8 @@ header.masthead {
 	position: relative;
 	background-color: #343a40;
 	background-size: cover;
-	padding-top: 8rem;
-	padding-bottom: 8rem;
+	padding-top: 10vw;
+	padding-bottom: 10vw;
 }
 
 header.masthead .overlay {
@@ -147,10 +147,6 @@ header.masthead h1 {
 }
 
 @media (min-width: 768px) {
-	header.masthead {
-		padding-top: 12rem;
-		padding-bottom: 12rem;
-	}
 	header.masthead h1 {
 		font-size: 3rem;
 	}
