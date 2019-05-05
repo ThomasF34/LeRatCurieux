@@ -25,23 +25,7 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
-@font-face {
-	font-family: "blinkstones";
-	src: font-url('blinkstones.ttf');
-}
-
-@font-face {
-	font-family: "another_flight";
-	src: font-url('another_flight.otf');
-}
-
-.another-flight, h2, h3{
-	font-family: "another_flight", "Lato";
-}
-
-.blinkstones {
-	font-family: "blinkstones", "Lato";
-	//blinkstone isn't great with bold weight
+.normal-title {
 	font-weight: normal !important;
 }
 
