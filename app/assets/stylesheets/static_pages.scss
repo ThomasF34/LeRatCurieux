@@ -85,7 +85,7 @@
 	background-image: image-url('livreGauche.jpg');
 }
 
-#lastLine{
+.shadow-after{
 	box-shadow: 0 10px 10px #eee;
 }
 
@@ -102,9 +102,6 @@
 		background: image-url("presentation_mobile.jpg") no-repeat center center;
 	}
 }
-//body {
-//font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//}
 
 .bold{
 	font-weight: bold;
@@ -120,7 +117,6 @@ h3,
 h4,
 h5,
 h6 {
-	//font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 700;
 }
 
@@ -171,24 +167,20 @@ header.masthead h1 {
 }
 
 .features-icons {
-	padding-top: 7rem;
-	padding-bottom: 7rem;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
 }
 
 .features-icons .features-icons-item {
 	max-width: 20rem;
 }
 
-.features-icons .features-icons-item .features-icons-icon {
-	height: 7rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon i {
-	font-size: 4.5rem;
-}
-
-.features-icons .features-icons-item:hover .features-icons-icon i {
-	font-size: 5rem;
+.icon {
+	margin-bottom: 1rem;	
+	img{
+		height: 5vw;
+		width: 5vw;
+	}
 }
 
 .testimonials {
