@@ -2,6 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face{
+	font-family: OpenDyslexic;
+	src: font-url("OpenDyslexic-Regular.otf");
+}
+
+@font-face{
+	font-family: OpenDyslexic-Bold;
+	src: font-url("OpenDyslexic-Bold.otf");
+}
+
+.open-dyslexic{
+	font-family:OpenDyslexic
+}
+
 #partner{
 	margin-bottom: 15px;
 }
@@ -92,8 +106,16 @@
 	background-image: image-url('livreGauche.jpg');
 }
 
+.box-shadow{
+	box-shadow: 0 -10px 25px #eee, 0 10px 25px #eee;
+}
+
 .shadow-after{
 	box-shadow: 0 10px 10px #eee;
+}
+
+.shadow-before{
+	box-shadow: 0 -10px 10px #eee;
 }
 
 .bgExchangePic{
@@ -173,13 +195,9 @@ header.masthead h1 {
 	}
 }
 
-.features-icons {
+.pt-pb {
 	padding-top: 5vw;
 	padding-bottom: 5vw;
-}
-
-.features-icons .features-icons-item {
-	max-width: 20rem;
 }
 
 .icon {
@@ -188,6 +206,10 @@ header.masthead h1 {
 		height: 5vw;
 		width: 5vw;
 	}
+}
+
+.rat-icon img {
+	height: 15vw;
 }
 
 .testimonials {
