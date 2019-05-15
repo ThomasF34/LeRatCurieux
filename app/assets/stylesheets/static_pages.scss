@@ -55,16 +55,19 @@
 	height: 250px;
 }
 
-.social-icon {
-	width:5vw;
+.social-icon{
+	display: inline-block;
+	img {
+		width:5vw;
+	}
 }
 
-.social-icon:hover #icon_facebook:hover, #icon_mail:hover, #icon_phone:hover {
+.social-icon:hover, #icon_facebook:hover, #icon_mail:hover, #icon_phone:hover {
         -webkit-transform: scale(1.2) rotate(0.01deg);
         transform: scale(1.2) rotate(0.01deg);
 }
 
-.team_member_image, #icon_facebook, #icon_mail, #icon_phone{
+.team_member_image, .social-icon, #icon_facebook, #icon_mail, #icon_phone{
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
