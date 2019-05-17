@@ -200,6 +200,7 @@ header.masthead h1 {
 	padding-bottom: 5vw;
 }
 
+
 .icon {
 	margin-bottom: 1rem;	
 	img{
@@ -209,6 +210,17 @@ header.masthead h1 {
 
 .rat-icon img {
 	height: 15vw;
+}
+
+
+@media (max-width: 768px) {
+	.icon img {
+		height: 150px;
+	}
+
+	.rat-icon img {
+		height: 100px;
+	}
 }
 
 .testimonials {
