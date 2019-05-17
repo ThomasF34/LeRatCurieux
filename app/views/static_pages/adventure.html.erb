@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag "charts" %>
+
+<%= render "static_pages/facts" %> 
+
+<% flash.each do |key, value| %>
+  <div class="m-auto <%= flash_class(key) %>">
+    <%= value %>
+  </div>
+<% end %>
+
+<%= render "static_pages/team" %> 
+
+<%= render "static_pages/social" %> 
+
+<%= render "static_pages/newsletter" %> 

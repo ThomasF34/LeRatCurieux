@@ -9,4 +9,6 @@ class StaticPagesController < ApplicationController
   def privacy 
   end
 
+  def adventure
+  end
 end
