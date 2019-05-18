@@ -33,10 +33,6 @@
 	text-justify: newspaper;
 }
 
-.side-img{
-	height: 50%;
-}
-
 .fullImg{
 	padding-right: 0 !important;
 	padding-left: 0 !important;
@@ -124,6 +120,10 @@
 
 .bgPresentationPic{
 	background: image-url("presentation_device.jpg") no-repeat center center;
+}
+
+.bg-adventure-pic{
+	background: image-url("livreGauche.jpg") no-repeat center center;
 }
 
 @media (max-width: 992px) {
@@ -259,4 +259,8 @@ header.masthead h1 {
 footer.footer {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
+}
+
+.side-img img {
+	height: 20vw;
 }

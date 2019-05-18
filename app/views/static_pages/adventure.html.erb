@@ -1,6 +1,14 @@
-<%= stylesheet_link_tag "charts" %>
 
-<%= render "static_pages/facts" %> 
+<header class="masthead text-white text-center bg-adventure-pic">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row"> 
+      <div class="col-xl-9 mx-auto">
+        <h2>Le rat curieux, c'est ...</h2>
+      </div>
+    </div>
+  </div>
+</header>
 
 <% flash.each do |key, value| %>
   <div class="m-auto <%= flash_class(key) %>">
