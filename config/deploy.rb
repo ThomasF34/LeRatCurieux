@@ -1,5 +1,5 @@
 # Change these
-server '185.216.27.87', roles: [:web, :app, :db], primary: true
+server '185.216.27.124', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:ThomasF34/LeRatCurieux2.0.git'
 set :application,     'le_rat_curieux'
